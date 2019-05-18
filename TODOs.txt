@@ -1,0 +1,29 @@
+## TODOs & Wishlist ##
+
+Future Improvements.
+
+> Settings:
+    > Allow users to mapping the keyboard keys.  
+    > Allow users to use a gamepad.
+    > Save and restore settings from the file settings.cfg in json.
+    > Let users to introduce their names.
+    > Screen to change settings.
+    > Screen to show scores.
+
+> Game play:
+	> Client/server option so the players can play on the net.
+	    > One player will run the server version and the client version for its game.
+	    > Other players will run the client version and will be assign to the game available that he chooses.
+	    > Allow several players to play in the same game. 
+	> Allow users to play against the computer.
+
+> New rules, new objects represented on the board, etc:
+    > Walls: Horizontal and vertical walls that a snake cannot go through:
+    	> When a snake collisions with a wall, it gets damage while in contact with it. The snake will not slow down.
+
+> Clean code and refactoring improvements:
+	> Add more comments and documentation to the code: docstrings.
+	> Add more exceptions.
+	> Refactor game input events management.  
+	> Improve the object model.
+	> Refactor settings module.

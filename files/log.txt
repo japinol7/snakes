@@ -1,0 +1,95 @@
+
+
+
+-------------------------Current game stats-------------------------
+time-->	2019-05-16 01:04:17.218843
+full screen-->	     False
+screen size-->	[1100, 788]
+speed-->	       100
+fps in settings-->	        32
+fps-->	   	 13.85
+cell size-->	        11
+body length start-->	         5
+body length to win-->	       700
+score to win-->	    999999
+current song-->	action_song__192b.mp3
+music playing-->	      True
+sound effects-->	      True
+game paused-->	     False
+current game-->	         1
+level-->	         2
+level_name-->	       002
+total sprites-->	<Group(17 sprites)>
+apples on the board-->	<Group(1 sprites)>
+mines on the board-->	<Group(0 sprites)>
+bats on the board-->	<Group(0 sprites)>
+bullets on the board-->	<Group(0 sprites)>
+game over:-->	      True
+winner:-->	      None
+----------------->	          
+snake1-->
+	color:-->		     Green
+	position (x, y)-->		(770, 487)
+	position (bottom)-->		       498
+	direction-->		       RIP
+	change position (x, y)-->		(0, '0.000')
+	body length-->		         7
+	stats-->
+		lives-->			         0
+		health-->			         0
+		power-->			        48
+		speed-->			        11
+		bullets_t1 shot-->			        29
+		bullets_t2 shot-->			        10
+		bullets_t3 shot-->			         2
+		bullets_t4 shot-->			         5
+		bullets_t1 remaining-->			         1
+		bullets_t2 remaining-->			        10
+		bullets_t3 remaining-->			         8
+		bullets_t4 remaining-->			         1
+		mines-->			         0
+		mines_t1-->			         0
+		mines_t2-->			         0
+		bats   -->			         0
+		bats_t1 B-->			         0
+		bats_t2 L-->			         0
+		bats_t3 R-->			         0
+		score-->			        88
+		apples-->			         2
+		apples_t1 R-->			         1
+		apples_t2 G-->			         1
+		apples_t3 Y-->			         0
+------------------>	          
+snake2-->
+	color:-->		    Yellow
+	position (x, y)-->		(737, 488)
+	position (bottom)-->		       499
+	direction-->		       RIP
+	change position (x, y)-->		(0, '0.000')
+	body length-->		         7
+	stats-->
+		lives-->			         0
+		health-->			        -7
+		power-->			       100
+		speed-->			        11
+		bullets_t1 shot-->			         0
+		bullets_t2 shot-->			         0
+		bullets_t3 shot-->			         0
+		bullets_t4 shot-->			         0
+		bullets_t1 remaining-->			        30
+		bullets_t2 remaining-->			        20
+		bullets_t3 remaining-->			        10
+		bullets_t4 remaining-->			         6
+		mines-->			         0
+		mines_t1-->			         0
+		mines_t2-->			         0
+		bats   -->			         0
+		bats_t1 B-->			         0
+		bats_t2 L-->			         0
+		bats_t3 R-->			         0
+		score-->			        88
+		apples-->			         2
+		apples_t1 R-->			         1
+		apples_t2 G-->			         1
+		apples_t3 Y-->			         0
+--------------------------------------------------------------------
