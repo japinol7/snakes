@@ -7,11 +7,12 @@
 	version: 1.0.1
 	language: English
 	author: Joan A. Pinol
-	author_nickname:  japinol
+	author_nickname: japinol
 	author_gitHub: japinol7
 	author_twitter: @japinol
 	main module: snakes_game.py
 	requirements: pygame
+	Python requires: 3.7 or greater.
 	Python versions tested: 3.7.3 64bits under Windows 10
 
 
@@ -34,7 +35,7 @@
 	> If the head of a snake collides with the head of another snake, both snakes get damage.
 	> A snake have health and lives. Each time that its health is depleted, it loses a life.
 	  When a snake exhaust all their lives dies and cannot move anymore.
-	  But the game continues until the other player die, its snake body length reaches n pieces (700 by default) or he exits the game.
+	  But the game continues until the other player dies, its snake body length reaches n pieces (700 by default) or he exits the game.
 	> Levels: 
 	    > Levels are completed by eating all the apples of the board.
 	    > When a level is finished, all remaining mines, cartridges and recovery potions are removed from the board.
