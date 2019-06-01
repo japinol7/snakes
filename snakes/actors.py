@@ -60,7 +60,7 @@ class Actor(pg.sprite.Sprite):
         elif n + len(actor_list) >= actor_cls.max_qty_on_board:
             n = actor_cls.max_qty_on_board - len(actor_list)
         iterations = 0
-        for i in range(n):
+        for _ in range(n):
             if probability_each < 100 and randint(1, 100) > probability_each:
                 continue
             actor_added = False
