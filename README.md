@@ -73,9 +73,9 @@
           A bullet can hit a/an:
             > Snake's head: Deal damage to the snake.
             > Snake's body: Do not deal damage to the snake, but the bullet is destroyed. 
-            > Bat: The bat lose health and can die.
+            > Bat: The bat loses health and can die.
             > Apple: The apple is destroyed, but you do not get points.
-            > Mine: The mine is destroyed.
+            > Mine: The mine loses health and can be destroyed.
             > Potion, cartridge...: The item is destroyed, but you get nothing.
 	> The winner of the game is the player who has the best score when the game ends.
 	> The program maintain the scores of the players.
