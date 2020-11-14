@@ -94,13 +94,12 @@ def draw_text_rendered(text, x, y, screen, color, space_btw_chars=None,
 
 def draw_bar_graphic(surf, amount_pct, x, y, color_max=Color.GREEN,
                      color_med=Color.YELLOW, color_min=Color.RED,
-                     bar_width=100, bar_height=15, bar_outline_small=False):
+                     bar_width=100, bar_height=15, bar_without_outline=False):
     if amount_pct < 0:
         amount_pct = 0
     if bar_height < 5:
         bar_height = 5
     fill = amount_pct * bar_width
-    outline_rect = pg.Rect(x, y, bar_width, bar_height if not bar_outline_small else 1)
     fill_rect = pg.Rect(x, y, fill, bar_height)
     if amount_pct > 0.65:
         col = color_max
@@ -109,4 +108,6 @@ def draw_bar_graphic(surf, amount_pct, x, y, color_max=Color.GREEN,
     else:
         col = color_min
     pg.draw.rect(surf, col, fill_rect)
-    pg.draw.rect(surf, Color.WHITE, outline_rect, 2)
+    if not bar_without_outline:
+        outline_rect = pg.Rect(x, y, bar_width, bar_height)
+        pg.draw.rect(surf, Color.WHITE, outline_rect, 2)

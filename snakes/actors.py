@@ -41,7 +41,7 @@ class Actor(pg.sprite.Sprite):
                                      y=actor.rect.y - Settings.sprite_health_bar_pos_rel.y,
                                      bar_width=Settings.sprite_health_bar_size.w,
                                      bar_height=Settings.sprite_health_bar_size.h,
-                                     bar_outline_small=True)
+                                     bar_without_outline=True)
 
     @staticmethod
     def create_some_random_pos(actor_cls, n, actor_type, actor_list, game,
