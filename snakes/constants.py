@@ -23,18 +23,19 @@ DIRECTION_RIP = 5    # Special direction to use when a player character is dead
 LOG_FILE = os.path.join('files', 'log.txt')
 SCORES_FILE = os.path.join('files', 'scores.txt')
 
+SOUND_FORMAT = 'ogg'
 
 # If the code is frozen, use this path:
 if getattr(sys, 'frozen', False):
     CURRENT_PATH = sys._MEIPASS
     BITMAPS_FOLDER = os.path.join(CURRENT_PATH, 'assets', 'img')
-    SOUNDS_FOLDER = os.path.join(CURRENT_PATH, 'assets', 'snd')
+    SOUNDS_FOLDER = os.path.join(CURRENT_PATH, 'assets', 'snd', SOUND_FORMAT)
     MUSIC_FOLDER = os.path.join(CURRENT_PATH, 'assets', 'music')
     FONT_FOLDER = os.path.join(CURRENT_PATH, 'assets', 'data')
     FONT_DEFAULT_NAME = os.path.join(FONT_FOLDER, 'sans.ttf')
 else:
     BITMAPS_FOLDER = os.path.join('assets', 'img')
-    SOUNDS_FOLDER = os.path.join('assets', 'snd')
+    SOUNDS_FOLDER = os.path.join('assets', 'snd', SOUND_FORMAT)
     MUSIC_FOLDER = os.path.join('assets', 'music')
     FONT_DEFAULT_NAME = os.path.join('assets', 'data', 'sans.ttf')
 
@@ -76,15 +77,15 @@ FILE_NAMES = {
                 'im_bg_blue_t1': ('bg_blue_t1', 'png'),
                 'im_bg_blue_t2': ('bg_blue_t2', 'png'),
                 'im_bg_black_t1': ('bg_black_t1', 'png'),
-                'snd_apple_hit': ('apple_hit', 'wav'),
-                'snd_collission': ('collision', 'wav'),
-                'snd_bat_hit': ('bat_hit', 'wav'),
-                'snd_bat_scream': ('bat_scream', 'wav'),
-                'snd_bullet_t1': ('bullet_t1', 'wav'),
-                'snd_bullet_t2': ('bullet_t2', 'wav'),
-                'snd_bullet_t3': ('bullet_t3', 'wav'),
-                'snd_bullet_t4': ('bullet_t4', 'wav'),
-                'snd_weapon_empty': ('weapon_empty', 'wav'),
-                'snd_explosion': ('explosion', 'wav'),
-                'snd_mine_hit': ('mine_hit', 'wav'),
+                'snd_apple_hit': ('apple_hit', SOUND_FORMAT),
+                'snd_collission': ('collision', SOUND_FORMAT),
+                'snd_bat_hit': ('bat_hit', SOUND_FORMAT),
+                'snd_bat_scream': ('bat_scream', SOUND_FORMAT),
+                'snd_bullet_t1': ('bullet_t1', SOUND_FORMAT),
+                'snd_bullet_t2': ('bullet_t2', SOUND_FORMAT),
+                'snd_bullet_t3': ('bullet_t3', SOUND_FORMAT),
+                'snd_bullet_t4': ('bullet_t4', SOUND_FORMAT),
+                'snd_weapon_empty': ('weapon_empty', SOUND_FORMAT),
+                'snd_explosion': ('explosion', SOUND_FORMAT),
+                'snd_mine_hit': ('mine_hit', SOUND_FORMAT),
             }
