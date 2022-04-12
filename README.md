@@ -13,7 +13,9 @@
 	main module: snakes_game.py
 	requirements: pygame
 	Python requires: 3.7 or greater.
-	Python versions tested: 3.7.3 64bits under Windows 10
+	Python versions tested: 
+            3.7.3  64bits under Windows 10
+            3.9.12 64bits under Windows 10
 
 
 ## Screenshots
