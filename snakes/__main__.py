@@ -9,7 +9,7 @@ import traceback
 import pygame as pg
 
 from snakes.snakes_game import Game, logger
-from snakes import screens
+from snakes import screen
 
 
 def main():
@@ -55,7 +55,7 @@ def main():
                         snake_body_len_max=args.maxbodylen, score_to_win=args.scoretowin,
                         portrait_mode=args.portrait)
             game.is_music_paused = is_music_paused
-            screen_start_game = screens.StartGame(game)
+            screen_start_game = screen.StartGame(game)
             while game.is_start_screen:
                 screen_start_game.start_up()
             if not Game.is_exit_game:

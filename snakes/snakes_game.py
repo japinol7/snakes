@@ -14,7 +14,7 @@ from snakes import levels
 from snakes import lib_graphics_jp as libg_jp
 from snakes.resources import Resource
 from snakes.score_bars import ScoreBar
-from snakes import screens
+from snakes import screen
 from snakes.scores import Scores
 from snakes.settings import Settings
 from snakes.snakes import Snake
@@ -113,10 +113,10 @@ class Game:
                 pg.mixer.music.pause()
 
         # Initialize screens
-        self.screen_exit_current_game = screens.ExitCurrentGame(self)
-        self.screen_help = screens.Help(self)
-        self.screen_pause = screens.Pause(self)
-        self.screen_game_over = screens.GameOver(self)
+        self.screen_exit_current_game = screen.ExitCurrentGame(self)
+        self.screen_help = screen.Help(self)
+        self.screen_pause = screen.Pause(self)
+        self.screen_game_over = screen.GameOver(self)
 
         # Initialize groups of sprites
         self.active_sprites = pg.sprite.Group()
