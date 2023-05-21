@@ -4,7 +4,7 @@
 	Objective: Each player will try to win the game by getting the best score.
 
 	program: snakes
-	version: 1.0.1
+	version: 1.0.2
 	language: English
 	author: Joan A. Pinol
 	author_nickname: japinol

@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='snakes',
     author='Joan A. Pinol  (japinol)',
-    version='1.0.1',
+    version='1.0.2',
     license='MIT',
     description='Snakes.',
     long_description='Snakes. Similar to classic Snake game but with player versus player version and other surprises.',
