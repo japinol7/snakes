@@ -16,6 +16,7 @@
 	Python versions tested: 
             3.7.3  64bits under Windows 10
             3.9.12 64bits under Windows 10
+            3.10.10 64bits under Windows 10
 
 
 ## Screenshots
