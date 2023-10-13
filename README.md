@@ -12,11 +12,10 @@
 	author_twitter: @japinol
 	main module: snakes_game.py
 	requirements: pygame
-	Python requires: 3.7 or greater.
+	Python requires: 3.9 or greater.
 	Python versions tested: 
-            3.7.3  64bits under Windows 10
             3.9.12 64bits under Windows 10
-            3.10.10 64bits under Windows 10
+            3.11.5 64bits under Windows 11
 
 
 ## Screenshots
@@ -194,7 +193,8 @@
 	Do this:
 	    1. Clone this repository.
 	    2. Go to its folder in your system.
-	    3. $ python -m snakes
+	    3. $ pip install -r requirements.txt
+	    4. $ python -m snakes
 
      If you need to install pygame library just do it this way. Try:
 	    $ pip install pygame
