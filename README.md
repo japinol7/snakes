@@ -195,6 +195,3 @@
 	    2. Go to its folder in your system.
 	    3. $ pip install -r requirements.txt
 	    4. $ python -m snakes
-
-     If you need to install pygame library just do it this way. Try:
-	    $ pip install pygame
