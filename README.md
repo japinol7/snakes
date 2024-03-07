@@ -127,7 +127,8 @@
 
 ## Usage
 
-	snakes [-h] [-b BODY_LENGTH] [-m MAX_BODY_LEN] [-r SCORE_TO_WIN] [-c CELL_SIZE] [-w SCREEN_WIDTH] [-e SCREEN_HEIGHT] [-p] [-f] [-s SPEED_PCT] [-t]
+	snakes [-h] [-b BODY_LENGTH] [-m MAX_BODY_LEN] [-r SCORE_TO_WIN] [-c CELL_SIZE]
+           [-w SCREEN_WIDTH] [-e SCREEN_HEIGHT] [-p] [-f] [-s SPEED_PCT] [-u] [-t]
 	
 	optional arguments:
 	  -h, --help            show this help message and exit
@@ -142,7 +143,7 @@
 	  -w SCREEN_WIDTH, 	--widthscreen SCREEN_WIDTH
 	                        width of the screen.
 	                        If screen height is not supplied, the best proportion is calculated. 
-	  -e SCREEN_HEIGHT, 	--heightscreen SCREEN_HEIGHT
+	  -e SCREEN_HEIGHT, --heightscreen SCREEN_HEIGHT
 	                        height of the screen.
 	                        If screen width is not supplied, the best proportion is calculated.
 	  -p, 			--portrait
@@ -152,27 +153,33 @@
 	  -s SPEED_PCT, 	--speedpct SPEED_PCT
 	                        Changes the speed of the game by a percentage.
 	                        For example: 200 would be twice the normal speed, 50 would be half the normal speed.
+	  -u, 			--nodisplayscaled
+	                        Deactivate the scaling of the game screen. 
+	                        Resolution depends on desktop size and scale graphics. 
+	                        Note that Pygame scaled is considered an experimental API 
+	                        and is subject to change.
 	  -t, 			--debugtraces
 	                        show debug back traces information when something goes wrong.
 
 
 **Default optional arguments**
 
-		BODY_LENGTH		5
-		MAX_BODY_LEN	700
-		SCORE_TO_WIN	999999
-		CELL_SIZE		14
-		SCREEN_WIDTH	1260
-		SCREEN_HEIGHT	903
-		SPEED_PCT		100
-		portrait		False
+		bodylen		5
+		maxbodylen	700
+		scoretowin	999999
+		cellsize         14
+		widthscreen    1260
+		heightscreen    903
+		portrait        False
 		fullscreen		False
-		debugtraces		False
+		speedpct        100
+		nodisplayscaled False
+		debugtraces     False
 
 
 **Examples of usage**
 
-	If snakes has not been installed as an app:
+	Run snakes examples:
 		$ python -m snakes
 		$ python -m snakes --bodylen 10 --cellsize 18 --widthscreen 850  --scoretowin 450
 		$ python -m snakes --bodylen 20 --cellsize 10 --widthscreen 1240

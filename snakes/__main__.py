@@ -18,7 +18,8 @@ def main():
     parser = ArgumentParser(description="Snakes.",
                             prog="snakes",
                             usage="%(prog)s [-h] [-b BODY_LENGTH] [-m MAX_BODY_LEN] [-r SCORE_TO_WIN]"
-                            "[-c CELL_SIZE] [-w SCREEN_WIDTH] [-e SCREEN_HEIGHT] [-p] [-f] [-s SPEED_PCT] [-t]")
+                            "[-c CELL_SIZE] [-w SCREEN_WIDTH] [-e SCREEN_HEIGHT] [-p] [-f] [-s SPEED_PCT] "
+                            "[-u] [-t]")
     parser.add_argument('-b', '--bodylen', default=None,
                         help='body length of the snakes at the start of the game.')
     parser.add_argument('-m', '--maxbodylen', default=None,
@@ -35,11 +36,16 @@ def main():
                               'If screen width is not supplied, the best proportion is calculated.')
     parser.add_argument('-p', '--portrait', default=None, action='store_true',
                         help='set screen to portrait mode.')
+    parser.add_argument('-f', '--fullscreen', default=None, action='store_true',
+                        help='Starts the game in full screen mode.')
     parser.add_argument('-s', '--speedpct', default=None,
                         help='changes the speed of the game by a percentage.\n'
                              'For example: 200 would be twice the normal speed, 50 would be half the normal speed.')
-    parser.add_argument('-f', '--fullscreen', default=None, action='store_true',
-                        help='Starts the game in full screen mode.')
+    parser.add_argument('-u', '--nodisplayscaled', default=False, action='store_true',
+                        help='Remove the scaling of the game screen. '
+                             'Resolution depends on desktop size and scale graphics. '
+                             'Note that Pygame scaled is considered an experimental API '
+                             'and is subject to change.')
     parser.add_argument('-t', '--debugtraces', default=None, action='store_true',
                         help='Show debug back traces information when something goes wrong.')
     args = parser.parse_args()
@@ -50,10 +56,10 @@ def main():
     while not Game.is_exit_game:
         try:
             game = Game(screen_width=args.widthscreen, screen_height=args.heightscreen,
-                        full_screen=args.fullscreen, cell_size=args.cellsize,
-                        speed_pct=args.speedpct, snake_body_len_start=args.bodylen,
-                        snake_body_len_max=args.maxbodylen, score_to_win=args.scoretowin,
-                        portrait_mode=args.portrait)
+                        is_full_screen=args.fullscreen, is_no_display_scaled=args.nodisplayscaled,
+                        cell_size=args.cellsize, speed_pct=args.speedpct,
+                        snake_body_len_start=args.bodylen, snake_body_len_max=args.maxbodylen,
+                        score_to_win=args.scoretowin, portrait_mode=args.portrait)
             game.is_music_paused = is_music_paused
             screen_start_game = screen.StartGame(game)
             while game.is_start_screen:

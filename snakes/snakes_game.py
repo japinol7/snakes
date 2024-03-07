@@ -39,7 +39,8 @@ class Game:
     normal_screen_flags = None
     full_screen_flags = None
 
-    def __init__(self, screen_width=None, screen_height=None, full_screen=None,
+    def __init__(self, screen_width=None, screen_height=None,
+                 is_full_screen=None, is_no_display_scaled=None,
                  cell_size=None, speed_pct=None, snake_body_len_start=None,
                  snake_body_len_max=None, score_to_win=None, portrait_mode=None):
         self.name = "Snakes v 1.01"
@@ -83,19 +84,16 @@ class Game:
             Settings.display_start_width = pg_display_info.current_w
             Settings.display_start_height = pg_display_info.current_h
             Settings.calculate_settings(screen_width=screen_width,
-                                        screen_height=screen_height, full_screen=full_screen,
+                                        screen_height=screen_height, full_screen=is_full_screen,
                                         cell_size=cell_size, speed_pct=speed_pct,
                                         snake_body_len_start=snake_body_len_start,
                                         snake_body_len_max=snake_body_len_max,
                                         score_to_win=score_to_win, portrait_mode=portrait_mode)
             # Set screen to the settings configuration
             Game.size = [Settings.screen_width, Settings.screen_height]
-            Game.full_screen_flags = pg.FULLSCREEN | pg.DOUBLEBUF | pg.HWSURFACE
-            Game.normal_screen_flags = pg.DOUBLEBUF | pg.HWSURFACE
-            if Settings.is_full_screen:
-                Game.screen_flags = Game.full_screen_flags
-            else:
-                Game.screen_flags = Game.normal_screen_flags
+            Game.full_screen_flags = pg.FULLSCREEN if is_no_display_scaled else pg.FULLSCREEN | pg.SCALED
+            Game.normal_screen_flags = pg.SHOWN if is_no_display_scaled else pg.SHOWN | pg.SCALED
+            Game.screen_flags = Game.full_screen_flags if Settings.is_full_screen else Game.normal_screen_flags
             Game.screen = pg.display.set_mode(Game.size, Game.screen_flags)
             # Load and render resources
             Resource.load_and_render_background_images()
