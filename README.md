@@ -26,24 +26,34 @@
 ## Rules and user guide
 
 	> A snake can move to the following directions: left, right, up, down.
-	  Although it cannot reverse the current direction directly, it can do it if the player
-	  press a vertical key and an horizontal key simultaneously.
-	> A snake has a head of one piece and starts with a body length of N pieces (by default 5, but it can be changed by the user). 
+	  Although it cannot reverse the current direction directly, 
+	  it can do it if the player press a vertical key and an horizontal 
+	  key simultaneously.
+	> A snake has a head of one piece and starts with a body length 
+	  of N pieces (by default 5, but it can be changed by the user). 
 	> Each time a snake eats an apple, its body grows by one piece.
-	> If the head of a snake collides with the body of another snake, the snake that collides gets damage.
-	> If the head of a snake collides with the head of another snake, both snakes get damage.
-	> A snake have health and lives. Each time that its health is depleted, it loses a life.
+	> If the head of a snake collides with the body of another snake, 
+	  the snake that collides gets damage.
+	> If the head of a snake collides with the head of another snake, 
+	  both snakes get damage.
+	> A snake have health and lives. 
+	  Each time that its health is depleted, it loses a life.
 	  When a snake exhaust all their lives dies and cannot move anymore.
-	  But the game continues until the other player dies, its snake body length reaches n pieces (700 by default) or he exits the game.
+	  But the game continues until the other player dies, 
+	  its snake body length reaches n pieces (700 by default) or he exits the game.
 	> Levels: 
 	    > Levels are completed by eating all the apples of the board.
-	    > When a level is finished, all remaining mines, cartridges and recovery potions are removed from the board.
+	    > When a level is finished, all remaining mines, cartridges 
+	  and recovery potions are removed from the board.
 	    > Surviving bats remain on the board.
 	> Apples: 
 	    > There are three types of apples:
-	        > Red apples: They give you 50 points. They are high quality apples.
-    	    > Green apples: They give you 38 points. They are normal quality apples.
-	        > Yellow apples: They give you 25 points. They are less than normal quality apples, but still tasty.
+	        > Red apples: They give you 50 points. 
+	  	  	  They are high quality apples.
+    	    > Green apples: They give you 38 points. 
+	  	  	  They are normal quality apples.
+	        > Yellow apples: They give you 25 points. 
+	  	  	  They are less than normal quality apples, but still tasty.
 	> Mines: 
 	    > There are two types of mines:
 	        > Aqua mines: They deal medium damage.
@@ -51,7 +61,8 @@
 	        > Lilac mines: They deal great damage
 	        	> If and only if you destroy them with a weapon, you get 15 points.
 	> Bats: 
-	    > They bite your head/neck (never the body) whenever you touch them with your head.
+	    > They bite your head/neck (never the body) 
+	  	  whenever you touch them with your head.
           But they receive damage too, and eventually they die.
           Unlike mines, they do not disappear when players reach a new level.
 	    > There are three types of bats:
@@ -71,14 +82,16 @@
             > A heavy weapon: Neutronic.
           A bullet can hit a/an:
             > Snake's head: Deal damage to the snake.
-            > Snake's body: Do not deal damage to the snake, but the bullet is destroyed. 
+            > Snake's body: Do not deal damage to the snake, 
+	  	  	  but the bullet is destroyed. 
             > Bat: The bat loses health and can die.
             > Apple: The apple is destroyed, but you do not get points.
             > Mine: The mine loses health and can be destroyed.
             > Potion, cartridge...: The item is destroyed, but you get nothing.
 	> The winner of the game is the player who has the best score when the game ends.
 	> The program maintain the scores of the players.
-	> Currently, only two players are allowed and they have to control their snake on the same client game:
+	> Currently, only two players are allowed and 
+	  they have to control their snake on the same client game:
 		> Player1 controls snake1 using the keyboard keys: left, right, up, down.
 		> Player2 controls snake2 using the keyboard keys: a, d, w, s.
 	> Information in the score line:
