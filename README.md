@@ -4,7 +4,7 @@
 	Objective: Each player will try to win the game by getting the best score.
 
 	program: snakes
-	version: 1.0.3
+	version: 1.0.4
 	language: English
 	author: Joan A. Pinol
 	author_nickname: japinol
@@ -12,7 +12,7 @@
 	author_twitter: @japinol
 	main module: snakes_game.py
 	requirements: pygame
-	Python requires: 3.12 or greater.
+	Python requires: 3.13 or greater.
 
 
 ## Screenshots
