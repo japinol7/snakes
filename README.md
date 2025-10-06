@@ -12,7 +12,7 @@
 	author_twitter: @japinol
 	main module: snakes_game.py
 	requirements: pygame
-	Python requires: 3.13 or greater.
+	Python requires: 3.14 or greater.
 
 
 ## Screenshots
